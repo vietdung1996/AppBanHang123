@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AppBanHang</string>
+    <string name="facebook_app_id"></string>
+    <string name="tong_tien">Tổng tiền:</string>
+    <string name="gia_tien">Giá tiền</string>
+    <string name="thanh_toan">Thanh toán</string>
+    <string name="tiep_tuc_mua_hang">Tiếp tục mua hàng</string>
+    <string name="khong_co_mat_hang_nao">Không có mặt hàng nào!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="ten_san_pham">Tên sản phẩm</string>
+    <string name="gia_san_pham">Giá sản phẩm</string>
+    <string name="them_gio_hang">Thêm giỏ hàng</string>
+    <string name="mo_ta_chi_tiet_san_pham">Mô tả chi tiết sản phẩm</string>
+    <string name="ten_nguoi_mua">Tên người mua:</string>
+    <string name="email1">Email:</string>
+    <string name="so_dien_thoai">Số điện thoại:</string>
+    <string name="xac_nhan">Xác Nhận</string>
+    <string name="quay_lai">Quay lại</string>
+    <string name="loai_san_pham">Loại sản phẩm</string>
+    <string name="_1000000">1000000</string>
+    <string name="mo_ta">Mô tả</string>
+    <string name="ten_mon_hang">Tên món hàng</string>
+    <string name="gia_mon_hang">Giá món hàng</string>
+</resources>

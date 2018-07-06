@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.edu.topica.activity.GiohangActivity"
+    android:background="@color/mainBackground"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarGiohang"
+        app:title="Gio Hang"
+        app:titleTextColor="@color/white"
+        android:theme="@style/CustomAppBar"
+        android:background="@color/blueGrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="26sp"
+                android:id="@+id/txtThongbao"
+                android:text="@string/khong_co_mat_hang_nao"
+                android:textColor="@color/blueGrayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/lvGiohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/blueGrayButton"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tong_tien"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin1"
+                android:background="@color/blueGrayButton"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtTonggiatien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gia_tien"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin1"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="@string/thanh_toan"
+        android:textColor="@color/white"
+        android:background="@color/blueGrayButton"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnTieptucmuahang"
+        android:layout_gravity="center"
+        android:text="@string/tiep_tuc_mua_hang"
+        android:background="@color/blueGrayButton"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin1"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>

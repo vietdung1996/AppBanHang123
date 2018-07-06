@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackground"
+    tools:context="vn.edu.topica.activity.Chitietsanpham">
+    <android.support.v7.widget.Toolbar
+        app:title="Chi tiết sản phẩm"
+        app:titleTextColor="@color/white"
+        android:background="@color/blueGrey"
+        android:id="@+id/toolbarchitietsp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin5">
+        <ImageView
+            android:id="@+id/imgchitietsanpham"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:layout_gravity="bottom"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="marquee"
+                android:id="@+id/txtTenchitietsp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/margin5"
+                android:text="@string/ten_san_pham"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="0.5"
+                android:id="@+id/txtGiachitietsp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin2"
+                android:text="@string/gia_san_pham"
+                android:textColor="#dd8400"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:layout_weight="0.5"
+                android:id="@+id/spinner"
+                android:background="@drawable/spinerbackground"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin5"
+                android:textAlignment="center">
+
+            </Spinner>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnthem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/blueGrayButton"
+                android:text="@string/them_gio_hang"
+                android:layout_gravity="bottom"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/margin1"
+                android:layout_marginTop="@dimen/margin5"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:layout_marginTop="@dimen/margin5"
+        android:layout_marginLeft="@dimen/margin5"
+        android:layout_marginRight="@dimen/margin5">
+        <TextView
+            android:layout_marginTop="@dimen/margin5"
+            android:text="@string/mo_ta_chi_tiet_san_pham"
+            android:layout_marginLeft="@dimen/margin5"
+            android:textColor="@color/blueGrayText"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_marginLeft="@dimen/margin5"
+                android:paddingBottom="@dimen/margin10"
+                android:id="@+id/txtMotachitietsp"
+                android:textSize="18sp"
+                android:textColor="@color/blueGrayText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

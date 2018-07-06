@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CustomAppBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/blueGrey</item>
+        <item name="android:colorPrimaryDark">@color/blueGrey</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:navigationBarColor">@color/blueGrey</item>
+    </style>
+    
+    <style name="CustomBackgroundPopup" parent="CustomAppBar">
+        <item name="android:background">@color/blueGrey</item>
+    </style>
+
+</resources>
